@@ -15,7 +15,15 @@
   hosts: all
   vars_files:
     - exvars.yml
+  # vars_file is not supported in tasks. It is only supported at play level
   tasks:
     - name: Print URL
       ansible.builtin.debug:
         msg: URL - {{ URL }}
+
+- name: Roles vars
+  hosts: all
+  vars:
+    URL_PLAY: role_play.example.com
+  roles:
+    - sample

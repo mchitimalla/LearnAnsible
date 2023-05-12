@@ -1,3 +1,9 @@
 - name: Print Hello World
   ansible.builtin.debug:
     msg: Hello from Role Sample
+- name: Demo on Roles vars
+  ansible.builtin.debug:
+    msg: URL- {{URL}}
+- name: Demo on Roles Play vars
+  ansible.builtin.debug:
+    msg: URL_PLAY- {{URL_PLAY}}
