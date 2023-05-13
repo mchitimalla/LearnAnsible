@@ -3,5 +3,5 @@
   hosts: localhost
   connection: local
   tasks:
-    ansible.builtin.debug:
-    msg: Parameter - {{ lookup('aws_ssm', 'test.test', region='us-east-1' ) }}
+    - ansible.builtin.debug:
+      msg: Parameter - {{ lookup('aws_ssm', 'test.test', region='us-east-1' ) }}
