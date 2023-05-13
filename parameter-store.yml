@@ -1,0 +1,4 @@
+# We have created a parameter in aws systems manager which we will access here
+- name: Access AWS parameter store
+  ansible.builtin.debug:
+    msg: Parameter - {{ lookup('aws_ssm', 'test.test', region='us-east-1' ) }}
