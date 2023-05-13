@@ -27,3 +27,12 @@
     URL_PLAY: role_play.example.com
   roles:
     - sample
+- name: Load vars from a file
+  hosts: all
+  tasks:
+    - name: Run uptime command using shell
+      ansible.builtin.shell: uptime
+      register: output
+    - name: Print output
+      ansible.builtin.debug:
+        msg: '{{ output }}'

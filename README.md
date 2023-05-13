@@ -16,7 +16,9 @@ ansible-playbook -i /tmp/inv -e ansible_user=centos -e ansible_password=DevOps32
 Variable Precedence
 1. Command line
 2. Task level
-3. Variable files
-4. Play level
-5. Inventory Variables
+3. vars dir in roles
+4. Variable files
+5. Play level
+6. Inventory Variables
+7. defaults dir from roles
 #################
