@@ -11,3 +11,12 @@ ansible-pull localhost, -U  https://github.com/mchitimalla/LearnAnsible.git prin
 # quotes are mandatory if value starts with a variable , meaning
 # msg: {{ URL }} <- This requires quoting
 # msg: URL - {{ URL }} <- This does not require quoting
+ansible-playbook -i /tmp/inv -e ansible_user=centos -e ansible_password=DevOps321 vars.yml -e URL=cli.example.com ---passing vars from cmdline
+##################
+Variable Precedence
+1. Command line
+2. Task level
+3. Variable files
+4. Play level
+5. Inventory Variables
+#################
