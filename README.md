@@ -21,4 +21,5 @@ Variable Precedence
 5. Play level
 6. Inventory Variables
 7. defaults dir from roles
-#################
+################# 
+ansible-playbook -i localhost, vars.yml -e ansible_user=centos -e ansible_password=DevOps321 -e URL=cli.exmple.com
