@@ -24,5 +24,7 @@ Variable Precedence
 ################# 
 ansible-playbook -i localhost, vars.yml -e ansible_user=centos -e ansible_password=DevOps321 -e URL=cli.exmple.com
 
+ansible-pull -i localhost, -U https://github.com/mchitimalla/RoboshopAnsible.git roboshopansi.yml -e role_name=elk
+
 ##Labauto automation scripts
 https://github.com/linuxautomations/labautomation/tree/master/tools
