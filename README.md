@@ -23,3 +23,6 @@ Variable Precedence
 7. defaults dir from roles
 ################# 
 ansible-playbook -i localhost, vars.yml -e ansible_user=centos -e ansible_password=DevOps321 -e URL=cli.exmple.com
+
+##Labauto automation scripts
+https://github.com/linuxautomations/labautomation/tree/master/tools
